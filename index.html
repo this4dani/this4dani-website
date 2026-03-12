@@ -57,45 +57,12 @@
     filter: brightness(0) saturate(100%) invert(98%) sepia(5%) saturate(50%) hue-rotate(20deg) brightness(105%) contrast(98%);
 }
         
-        /* Intro container - no box, text directly on page background */
-        .intro {
-            background: transparent;
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 70px 40px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-        
-        /* Remove left accent bar */
+        /* Intro - layout handled by styles.css, only hover effects here */
         .intro::before {
             display: none;
         }
 
-        /* Clean fuchsia heading */
-        .intro h1 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 6rem;
-            margin: 0 0 5px 0;
-            font-weight: 800;
-            letter-spacing: -5px;
-            color: #ff2d82;
-        }
-        
-        /* Acronym with enhanced hover - each letter different */
-        .intro p:first-of-type {
-            color: #ff6b7a;
-            font-size: 1.3rem;
-            margin-top: -50px;
-            margin-bottom: 15px;
-            font-weight: 600;
-            line-height: 1.4;
-            position: relative;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-        
-        /* Individual letter spans for the acronym */
+        /* Acronym letter hover colors */
         .intro p:first-of-type .letter-d { cursor: help; transition: color 0.3s; }
         .intro p:first-of-type .letter-a { cursor: help; transition: color 0.3s; }
         .intro p:first-of-type .letter-n { cursor: help; transition: color 0.3s; }
@@ -218,18 +185,6 @@
             visibility: visible;
         }
 
-        .intro p:last-of-type {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            color: var(--clr-cream);
-            font-size: 1.4rem;
-            margin: 35px 0 0 0;
-            font-weight: 400;
-            letter-spacing: 1px;
-            text-align: center;
-            line-height: 1.3;
-            font-style: normal;
-        }
-        
         /* Enhanced floating cards */
         .floating-cards {
             position: fixed;
@@ -361,15 +316,6 @@
             .floating-cards { display: none; }
         }
         
-        @media (max-width: 768px) {
-            .intro h1 {
-                font-size: 4rem;
-            }
-            
-            .intro {
-                padding: 40px 20px;
-            }
-        }
     </style>
     
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9422928756201532"
