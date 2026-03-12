@@ -57,6 +57,7 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   letter-spacing: 0.01em;
+  padding-top: 150px;
 }
 
 /* ===== LAYOUT ===== */
@@ -103,7 +104,10 @@ body {
   gap: 70px;
   align-items: center;
   justify-content: center;
-  position: static;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
 }
 
@@ -651,6 +655,10 @@ a:hover {
     width: 70px;
   }
   
+  body {
+    padding-top: 100px;
+  }
+  
   .intro {
     padding: 40px 30px;
   }
@@ -765,4 +773,3 @@ a:hover {
   background-position: center;
   opacity: 0.15;
 }
-
