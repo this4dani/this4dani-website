@@ -74,7 +74,7 @@ body {
 }
 
 .content-wrapper {
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 40px;
   min-height: calc(100vh - 400px);
 }
@@ -372,42 +372,40 @@ a:hover {
 
 /* ===== HOME PAGE ===== */
 .intro {
-  background: transparent;
   max-width: 850px;
   margin: 0 auto;
-  padding: 70px 40px;
-  text-align: center;
+  padding: 20px 40px;
+  text-align: left;
 }
 
 .intro h1 {
   font-family: 'Plus Jakarta Sans', sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   color: #ff2d82;
-  margin: 0 0 5px 0;
+  margin: 0;
   font-weight: 800;
-  letter-spacing: -5px;
+  letter-spacing: -3px;
+  line-height: 1;
 }
 
 .intro p:first-of-type {
+  font-family: 'Plus Jakarta Sans', sans-serif;
   color: #ff6b7a;
-  font-size: 1.3rem;
-  margin-top: -50px;
-  margin-bottom: 15px;
+  font-size: 1.1rem;
+  margin: 10px 0;
   font-weight: 600;
   line-height: 1.4;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  position: relative;
 }
 
 .intro p:last-of-type {
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: var(--clr-cream);
-  font-size: 1.4rem;
-  margin: 35px 0 0 0;
+  font-size: 1.3rem;
+  margin: 15px 0 0 0;
   font-weight: 400;
-  letter-spacing: 1px;
-  text-align: center;
-  line-height: 1.3;
-  font-style: normal;
+  letter-spacing: 0.5px;
+  line-height: 1.4;
 }
 
 /* ===== STORY PAGE ===== */
@@ -652,11 +650,11 @@ a:hover {
   }
   
   .intro {
-    padding: 40px 30px;
+    padding: 15px 20px;
   }
   
   .intro h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   
   .story-container {
