@@ -426,15 +426,25 @@
         </script>
     </div>    
         <!-- Navigation -->
-                <nav id="nav">
-            <a href="index.html" class="nav-brand">DANI'S</a>
-            <div class="nav-links">
-                <a href="index.html" class="active">Home</a>
-                <a href="glossary.html">Glossary</a>
-                <a href="flashcard.html">Flashcards</a>
-                <a href="story.html">Story</a>
-                <a href="follow.html">Social</a>
+                        <nav id="nav">
+            <a href="index.html" class="active">
+                <img src="images/home-heart-door.png" alt="Home">
+            </a>
+            <div class="nav-dropdown">
+                <a href="glossary.html">
+                    <img src="images/file-folder-magazne-lable.png" alt="Glossary">
+                </a>
+                <div class="dropdown-menu">
+                    <a href="glossary.html">Glossary</a>
+                    <a href="flashcard.html">Flashcards</a>
+                </div>
             </div>
+            <a href="story.html">
+                <img src="images/slip-knot-first-chain.png" alt="Story">
+            </a>
+            <a href="follow.html">
+                <img src="images/yarn-ball-insert-crochet-hook.png" alt="Social">
+            </a>
         </nav>
     
     <!-- Enhanced Floating Stitch Cards -->
@@ -547,7 +557,7 @@
     </div>
 
     <script>
-        // Navigation is static - no scroll behavior needed
+        // Navigation is static
 
         // Floating cards click functionality
         document.addEventListener('DOMContentLoaded', function() {
