@@ -15,7 +15,7 @@
     <meta name="description" content="DANI'S Interactive Crochet Platform - 265+ stitch glossary, pattern adjustment calculator, US UK terminology converter, gauge tools, yarn weight guides. 30 years expertise meets modern technology.">
     <meta name="keywords" content="crochet glossary, crochet dictionary, US UK crochet terms, pattern adjustment, gauge calculator, stitch counter, yarn weight converter, amigurumi, Tunisian crochet">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Schema Markup for Rich Snippets -->
     <script type="application/ld+json">
@@ -57,60 +57,30 @@
     filter: brightness(0) saturate(100%) invert(98%) sepia(5%) saturate(50%) hue-rotate(20deg) brightness(105%) contrast(98%);
 }
         
-        /* Intro container - solid mauve with beveled edges and left accent */
+        /* Intro container - no box, text directly on page background */
         .intro {
-            background: #7a3355;
+            background: transparent;
             max-width: 850px;
             margin: 0 auto;
-            padding: 70px;
-            padding-left: 85px;
-            border-radius: 25px;
-            text-align: left;
+            padding: 70px 40px;
+            text-align: center;
             position: relative;
             z-index: 1;
-            /* Beveled edge effect */
-            box-shadow: 
-                /* Top light */
-                inset 0 2px 4px rgba(255, 255, 255, 0.25),
-                /* Bottom shadow */
-                inset 0 -2px 4px rgba(0, 0, 0, 0.25),
-                /* Outer shadow */
-                0 15px 35px rgba(79, 43, 58, 0.4),
-                0 8px 20px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(250, 248, 243, 0.15);
         }
         
-        /* Left accent bar like other pages */
+        /* Remove left accent bar */
         .intro::before {
-            content: '';
-            position: absolute;
-            left: 30px;
-            top: 15%;
-            bottom: 15%;
-            width: 4px;
-            background: var(--clr-coral);
-            border-radius: 2px;
+            display: none;
         }
 
-        /* TRUE carved/engraved effect for DANI'S */
+        /* Clean fuchsia heading */
         .intro h1 {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             font-size: 6rem;
             margin: 0 0 5px 0;
             font-weight: 800;
             letter-spacing: -5px;
-            /* Text color matches page background to show through */
-            color: #001f26;
-            /* Create the carved effect with shadows */
-            text-shadow: 
-                /* Light mauve highlight below/right (as if light hits the edge) */
-                1px 1px 0 rgba(157, 81, 117, 0.6),  /* lighter mauve */
-                /* Pure black shadow above/left (inside the carving) */
-                -1px -1px 1px rgba(0, 0, 0, 1),
-                /* Additional mauve highlight for depth */
-                2px 2px 2px rgba(157, 81, 117, 0.3),
-                /* Deep black shadow */
-                -2px -2px 2px rgba(0, 0, 0, 1);
+            color: #ff2d82;
         }
         
         /* Acronym with enhanced hover - each letter different */
@@ -122,6 +92,7 @@
             font-weight: 600;
             line-height: 1.4;
             position: relative;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
         
         /* Individual letter spans for the acronym */
@@ -248,15 +219,15 @@
         }
 
         .intro p:last-of-type {
-            font-family: 'Crimson Text', serif;
-            color: #c8b8a8;
-            font-size: 1.8rem;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: var(--clr-cream);
+            font-size: 1.4rem;
             margin: 35px 0 0 0;
-            font-weight: 700;
+            font-weight: 400;
             letter-spacing: 1px;
             text-align: center;
             line-height: 1.3;
-            font-style: italic;
+            font-style: normal;
         }
         
         /* Enhanced floating cards */
@@ -311,7 +282,7 @@
         }
 
         .card-back .dani-text {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             font-size: 1.4rem;
             font-weight: 900;
             color: #ff2d82 !important;
@@ -345,7 +316,7 @@
         .fall-5 .card-icon { color: #46b2f9; }
 
         .card-abbr {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
             font-size: 0.9rem;
             font-weight: 800;
             text-shadow: 0 1px 2px rgba(255,255,255,0.3);
@@ -396,12 +367,7 @@
             }
             
             .intro {
-                padding: 40px 30px;
-                padding-left: 50px;
-            }
-            
-            .intro::before {
-                left: 15px;
+                padding: 40px 20px;
             }
         }
     </style>
